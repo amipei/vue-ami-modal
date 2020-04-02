@@ -1,12 +1,13 @@
 import AmiMask from './AmiMask';
 import Modal from './Modal';
 import popupManager from './popupManager'
+import scrollLock from '../lib/scroll-lock'
 const defaultComponentName = 'Modal'
 
 const Plugin = {
   install: function (Vue, options ={}) {
     if (this.installed) return;
-
+    Vue.use(scrollLock)
     this.installed = true
     this.popupManager = popupManager
     // 更改为单一模式
