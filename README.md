@@ -1,24 +1,28 @@
 # vue-ami-modal
+modal component for vue.js(2.0)
 
-## Project setup
+## Installation
+NPM(recommend)
 ```
-npm install
+npm install vue-ami-modal --save
 ```
+## Get started
+```
+import Vue from 'vue';
+import modal from 'vue-ami-modal';
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+Vue use(modal);
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+<template>
+  <modal name="ami">
+    <p>test</p>
+  </modal>
+</template>
+
+//this.$modal.show("ami");
+```
+
+## LICENSE
+MIT

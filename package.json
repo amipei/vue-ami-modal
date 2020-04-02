@@ -1,12 +1,14 @@
 {
   "name": "vue-ami-modal",
   "version": "0.1.0",
-  "private": true,
+  "main": "./src/index",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "repository": "https://github.com/amipei/vue-ami-modal",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
